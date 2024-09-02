@@ -1,1 +1,13 @@
+class Tabela{
 
+}
+/* notas
+ * Tipo da lista
+ * 
+ * 
+ * O que fazer:
+ * 1º Aplicação deve receber o nome de um arquivo de texto como argumento de linha de comando
+ * 2º Ler os dados do arquivo para um objeto ArrayList
+ * 3º Processar essas informações para extrair dados significativos(valores mínimos, máximos, média, ordenação, etc)
+ * 
+ */
