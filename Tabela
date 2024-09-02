@@ -21,5 +21,11 @@ class Tabela{
  * 1º Aplicação deve receber o nome de um arquivo de texto como argumento de linha de comando
  * 2º Ler os dados do arquivo para um objeto ArrayList
  * 3º Processar essas informações para extrair dados significativos(valores mínimos, máximos, média, ordenação, etc)
- * 
+ * IDEIAS P/ FAZER:
+ * - Média de gols por partida; 
+ * - Time com o melhor ataque do campeonato (mais gols feitos);
+ * - Time com o pior ataque (menos gols feitos);
+ * - Time com a pior defesa (mais gols contra);
+ * - Time com a melhor defesa (menos gols contra);
+ * - Porcentagem de vitorias em relação ao numero de jogos(total do campeonato ou individual);
  */
