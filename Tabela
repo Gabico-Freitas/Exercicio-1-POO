@@ -1,6 +1,6 @@
 class Tabela{
   private String time;
-  private int pontos, numVit,numEmp,numDer,golsF,golsT,saldoGols, numJogos=38;
+  private int pontos, numVit,numEmp,numDer,golsF,golsT,saldoGols, numJogos=380;
   public Tabela(int poiscao, String time, int pontos, int numVit, int numEmp, int numDer, int golsF, int golsT){
     this.posicao=posicao;//posição do time na tabela
     this.time=time;//nome do time
