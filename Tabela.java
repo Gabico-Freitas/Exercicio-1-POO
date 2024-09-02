@@ -1,4 +1,4 @@
-//Código para ler um txt
+//Código de exemplo para ler o txt
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
