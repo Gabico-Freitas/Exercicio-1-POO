@@ -10,7 +10,7 @@ class Tabela{
 
         try (BufferedReader br = new BufferedReader(new FileReader(caminhoArquivo))) {
             String linha= br.readLine();
-            
+            //código para imprimir todas as linhas do txt
             //  while ((linha) != null) {
             //     for (int i=0;i<linha.length();i++){
             //     }
