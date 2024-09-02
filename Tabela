@@ -22,7 +22,7 @@ class Tabela{
  * 2º Ler os dados do arquivo para um objeto ArrayList
  * 3º Processar essas informações para extrair dados significativos(valores mínimos, máximos, média, ordenação, etc)
  * IDEIAS P/ FAZER:
- * - Média de gols por partida; 
+ * - Média de gols por partida no campeonato; 
  * - Time com o melhor ataque do campeonato (mais gols feitos);
  * - Time com o pior ataque (menos gols feitos);
  * - Time com a pior defesa (mais gols contra);
