@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-class Tabela{
+class Testes{
     public static void main(String[] args) {
         String caminhoArquivo = "/workspaces/Exercicio-1-POO/tabela.txt";
         ArrayList lista= new ArrayList<Time>();
