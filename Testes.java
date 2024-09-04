@@ -17,7 +17,7 @@ class Testes{
                 }
                 //Com essa separação cada coisa entre | vira um item do Array
                 String[] coluna=linha.trim().split("\\|");
-                String nomeTime=coluna[2];
+                String nomeTime=coluna[2].trim();
                 //separação dos elementos do array em variáveis para criar um objeto Time
                 int golsFeitos=Integer.valueOf(coluna[8].trim());
                 int golsTomados=Integer.valueOf(coluna[9].trim());
@@ -29,8 +29,19 @@ class Testes{
                 //adicionando em um ArrayList
                 lista.add(index,t);
                 index++;
-              }
-              System.out.println(lista.get(0).getNome());
+            }
+            String nome="Palmeiras";
+            double porcentagem=1.0;
+            for(Time t: lista){
+                
+                if((nome.toLowerCase().equals(t.getNome().toLowerCase()))){
+                    
+                    porcentagem= t.porcentVit();
+                }
+            }
+            System.out.printf("foi de %.2f %%",porcentagem);
+            System.out.printf("");
+            //System.out.println((lista.get(0).getQuantVit()/38)*100);
         } catch (IOException e) {
             e.printStackTrace();
         }
