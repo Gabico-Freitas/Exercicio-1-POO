@@ -5,9 +5,7 @@ class App{
     public static void main (String [] args){
         
         Campeonato jogo= new Campeonato();
-        ArrayList<Time> lista;
         int escolha;
-        lista=jogo.lerArquivo();
         do {
             System.out.printf("\nO que deseja fazer?\n");
             menu();
