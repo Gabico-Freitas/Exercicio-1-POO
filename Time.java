@@ -23,7 +23,7 @@ class Time{
     return (quantVit/38)*100;
   }
   public String toString(){
-    return +nome+"\nGols: "+golsF+"\nGols contra: "+golsT+"\nJogos vencidos: "+quantVit;
+    return nome+"\nGols: "+golsF+"\nGols contra: "+golsT+"\nJogos vencidos: "+quantVit;
   }
   
 }
