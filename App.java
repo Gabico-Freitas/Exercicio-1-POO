@@ -9,7 +9,8 @@ class App{
         int escolha;
         lista=jogo.lerArquivo();
         do {
-            System.out.printf("\nO que deseja fazer?\n");
+            System.out.println("\f");
+            System.out.println("O que você deseja fazer?");
             menu();
             escolha=teclado.nextInt();
             switch (escolha) {
@@ -54,12 +55,12 @@ class App{
     
     //Método de menu, pode ser feito em outro local futuramente
     public static void menu(){
-        System.out.printf("\f1 Time com a melhor defesa (menos gols contra)?");
-        System.out.printf("\n2 Time com o melhor ataque do campeonato (mais gols feitos)");
-        System.out.printf("\n3 Time com o pior ataque (menos gols feitos)?");
-        System.out.printf("\n4 Time com a pior defesa (mais gols contra)?");
+        System.out.printf("1 Time com a melhor defesa ");
+        System.out.printf("\n2 Time com o melhor ataque do campeonato");
+        System.out.printf("\n3 Time com o pior ataque");
+        System.out.printf("\n4 Time com a pior defesa");
         System.out.printf("\n5 Média de gols por partida no campeonato");
-        System.out.printf("\n6 Porcentagem de vitorias em relação ao numero de jogos(total do campeonato ou individual)");
+        System.out.printf("\n6 Porcentagem de vitorias em relação ao numero de jogos");
         System.out.printf("\n7 Encerrar a aplicação");
     }
 
