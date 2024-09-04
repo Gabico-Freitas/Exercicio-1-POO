@@ -1,0 +1,32 @@
+
+@startuml
+class Time {
+  - nome: String
+  - golsF: int
+  - golsT: int
+  - quantVit: int
+  + Time(nome: String, golsF: int, golsT: int, quantVit: int)
+  + getNome(): String
+  + getGolsF(): int
+  + getGolsT(): int
+  + getQuantVit(): int
+  + porcentVit(): double
+  + toString(): String
+}
+
+class Campeonato {
+  - caminhoArquivo: String
+  - lista: ArrayList<Time>
+  + Campeonato()
+  + lerArquivo(): ArrayList<Time>
+}
+
+class App {
+  - teclado: Scanner
+  + main(args: String[]): void
+  + menu(): void
+}
+
+App ..> Campeonato : uses
+Campeonato "1" -- "0..*" Time : contains
+@enduml
