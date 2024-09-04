@@ -13,7 +13,7 @@ class App{
             escolha=teclado.nextInt();
             switch (escolha) {
                 case 1:
-                    System.out.printf("O time com a melhor defesa do campeonato foi o "+ escolha);
+                    System.out.printf("O time com a melhor defesa do campeonato foi o "+ jogo.melhorDef());
                     break;
                 case 2:
                     System.out.printf("O time com o melhor ataque do campeonato foi o "+ escolha);
@@ -25,24 +25,20 @@ class App{
                     System.out.printf("O time com a pior defesa do campeonato foi o "+ escolha);
                     break;
                 case 5:
-                    System.out.printf("A média de gols por partida no campeonato foi de ");  
+                    System.out.printf("A média de gols por partida no campeonato foi de %.2f", jogo.mediaCamp());  
                     break;
                 case 6:
-                    System.out.printf("Quer a porcentagem de vitorias em relação ao numero de jogos total do campeonato ou específica de algum time?");
-                    System.out.printf("\nDigite 1 para total e 2 para individual\n");
-                    int opcao=teclado.nextInt();                   
-                    if(opcao==1){
-                        System.out.printf("\nPorcentagem de vitorias em relação ao numero de jogos total do campeonato foi de "+ escolha);
-                    }
-                    else{
-                        System.out.printf("\nPorcentagem de vitorias em relação ao numero de jogos individual do time escolhido foi de"+ escolha);
-                    }
+                    System.out.printf("\nDe qual time você quer saber?");
+                    String timeEscolhido=teclado.nextLine();
+                    //trtamento de exceção, caso a pessoa digite um time que não existe
+                    System.out.printf("\nPorcentagem de vitorias em relação ao numero de jogos do"+timeEscolhido+"foi de"+ escolha);
                     break;
                 default:
                     break;
             }
             
         }while (escolha!=7);
+        System.out.println("Obrigado por usar nossa aplicação");
         teclado.close();
     }
     //Método para esperar antes de aparecer o menu, não está funcionando corretamente
@@ -59,8 +55,6 @@ class App{
         System.out.printf("\n4 Time com a pior defesa");
         System.out.printf("\n5 Média de gols por partida no campeonato");
         System.out.printf("\n6 Porcentagem de vitorias em relação ao numero de jogos");
-        System.out.printf("\n7 Encerrar a aplicação");
+        System.out.printf("\n7 Encerrar a aplicação\n");
     }
-
-
 }

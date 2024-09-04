@@ -35,6 +35,32 @@ class Campeonato{
         }
     }
     public String melhorDef(){
-        
+        int melhorDef=lista.get(0).getGolsT();
+        String melhor="";
+        for(int i=1; i<lista.size();i++){
+            if(melhorDef>=lista.get(i).getGolsT()){
+                melhorDef=lista.get(i).getGolsT();
+            }
+        }
+        for (Time t: lista){
+            if(t.getGolsT()==melhorDef){
+                melhor+=t.getNome()+" ";
+            }
+        }
+        return melhor.trim();
+    }
+    public double mediaVitCampeonato(){
+        double soma=0;
+        for(Time t: lista){
+            soma+=t.getQuantVit();
+        }
+        return soma/380;
+    }
+    public double mediaCamp(){
+        double soma=0;
+        for(Time t: lista){
+            soma+=t.getGolsF();
+        }
+        return (soma/380);
     }
 }

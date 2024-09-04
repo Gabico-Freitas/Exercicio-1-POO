@@ -19,7 +19,7 @@ class Time{
   public int getQuantVit(){
     return quantVit;
   }
-  public int porcentVit(){
+  public double porcentVit(){
     return (quantVit/38)*100;
   }
   public String toString(){
