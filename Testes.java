@@ -6,7 +6,7 @@ import java.util.ArrayList;
 class Testes{
     public static void main(String[] args) {
         String caminhoArquivo = "/workspaces/Exercicio-1-POO/tabela.txt";
-        ArrayList lista= new ArrayList<Time>();
+        ArrayList<Time> lista= new ArrayList<Time>();
         try (BufferedReader br = new BufferedReader(new FileReader(caminhoArquivo))) {
             String linha;
             int index=0;
@@ -30,7 +30,7 @@ class Testes{
                 lista.add(index,t);
                 index++;
               }
-              System.out.println(lista);
+              System.out.println(lista.get(0).getNome());
         } catch (IOException e) {
             e.printStackTrace();
         }

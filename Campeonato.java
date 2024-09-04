@@ -1,11 +1,12 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 class Campeonato{
     private String caminhoArquivo = "/workspaces/Exercicio-1-POO/tabela.txt";
-    private Time [] lista= new Time [20]; // Transformei em Arra, pois com ArrayList não estava conseguindo acessar os métodos da classe Time
+    private ArrayList<Time> lista= new ArrayList<Time>();; // Transformei em Array, pois com ArrayList não estava conseguindo acessar os métodos da classe Time
     public Campeonato(){}
-    public Time [] lerArquivo(){
+    public ArrayList<Time> lerArquivo(){
         try (BufferedReader br = new BufferedReader(new FileReader(caminhoArquivo))) {
             String linha;
             int index=0;
@@ -26,7 +27,7 @@ class Campeonato{
                 Time t= new Time(nomeTime,golsFeitos,golsTomados,vitoriasDoTime);
 
                 //adicionando em um ArrayList
-                lista[index]=t;
+                lista.add(index,t);
                 index++;
               }
             return lista;

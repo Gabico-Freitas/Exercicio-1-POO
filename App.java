@@ -5,10 +5,11 @@ class App{
     public static void main (String [] args){
         
         Campeonato jogo= new Campeonato();
-        Time [] lista;
+        ArrayList<Time> lista;
         int escolha;
         lista=jogo.lerArquivo();
         do {
+            System.out.printf("\nO que deseja fazer?\n");
             menu();
             escolha=teclado.nextInt();
             switch (escolha) {
@@ -60,7 +61,6 @@ class App{
         System.out.printf("\n5 Média de gols por partida no campeonato");
         System.out.printf("\n6 Porcentagem de vitorias em relação ao numero de jogos(total do campeonato ou individual)");
         System.out.printf("\n7 Encerrar a aplicação");
-        System.out.printf("\nO que deseja fazer?\n");
     }
 
 
