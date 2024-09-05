@@ -1,5 +1,8 @@
 /**
  * Classe que representa um time do campeonato com informações sobre gols feitos, gols tomados e vitórias.
+ *
+ * @author pedro.younes@edu.pucrs.br
+ * @author g.silva027@edu.pucrs.br
  */
 class Time {
   private int golsF, golsT, quantVit;
