@@ -5,6 +5,9 @@ import java.util.ArrayList;
 
 /**
  * Classe campeonato, responsável por a tabela e fornecer estatísticas sobre os times.
+ *
+ * @author pedro.younes@edu.pucrs.br
+ * @author g.silva027@edu.pucrs.br
  */
 class Campeonato {
     private String caminhoArquivo = "/workspaces/Exercicio-1-POO/tabela.txt";
