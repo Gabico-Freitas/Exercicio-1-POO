@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * Classe campeonato, responsável por a tabela e fornecer estatísticas sobre os times.
  */
 class Campeonato {
-    private String caminhoArquivo = "C:\\Users\\pedro.younes\\Downloads\\tabela (1).txt";
+    private String caminhoArquivo = "/workspaces/Exercicio-1-POO/tabela.txt";
     private ArrayList<Time> lista = new ArrayList<Time>();
 
     /**
