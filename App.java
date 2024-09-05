@@ -3,6 +3,9 @@ import java.util.ArrayList;
 
 /**
  * Classe principal, fornece um menu para consultar estatísticas sobre o campeonato brasileiro de 2023.
+ *
+ * @author pedro.younes@edu.pucrs.br
+ * @author g.silva027@edu.pucrs.br
  */
 class App {
     private static Scanner teclado = new Scanner(System.in);
