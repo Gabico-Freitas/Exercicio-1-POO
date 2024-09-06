@@ -1,32 +1,37 @@
-
 @startuml
 class Time {
-  - nome: String
-  - golsF: int
-  - golsT: int
-  - quantVit: int
-  + Time(nome: String, golsF: int, golsT: int, quantVit: int)
-  + getNome(): String
-  + getGolsF(): int
-  + getGolsT(): int
-  + getQuantVit(): int
-  + porcentVit(): double
-  + toString(): String
+    - int golsF
+    - int golsT
+    - int quantVit
+    - String nome
+    + Time(nome: String, golsF: int, golsT: int, quantVit: int)
+    + String getNome(): String
+    + int getGolsF(): int
+    + int getGolsT(): int
+    + double getQuantVit(): double
+    + double porcentVit(): double
+    + String toString(): String
 }
 
 class Campeonato {
-  - caminhoArquivo: String
-  - lista: ArrayList<Time>
-  + Campeonato()
-  + lerArquivo(): ArrayList<Time>
+    - String caminhoArquivo
+    - ArrayList<Time> lista
+    + Campeonato()
+    + ArrayList<Time> melhorDef(): ArrayList<Time>
+    + ArrayList<Time> melhorAtq(): ArrayList<Time>
+    + ArrayList<Time> piorAtq(): ArrayList<Time>
+    + ArrayList<Time> piorDef(): ArrayList<Time>
+    + boolean validaTime(nome: String): boolean
+    + double mediaVitTime(nome: String): double
+    + double mediaCamp(): double
 }
 
 class App {
-  - teclado: Scanner
-  + main(args: String[]): void
-  + menu(): void
+    - static Scanner teclado
+    + main(args: String[]): void
+    - static void menu(): void
 }
 
+Campeonato "1" *-- "0..*" Time : contains
 App ..> Campeonato : uses
-Campeonato "1" -- "0..*" Time : contains
 @enduml
