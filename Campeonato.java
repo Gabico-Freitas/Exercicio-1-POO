@@ -5,7 +5,7 @@ import java.util.ArrayList;
 class Campeonato{
     private String caminhoArquivo = "/workspaces/Exercicio-1-POO/tabela.txt";
     private ArrayList<Time> lista= new ArrayList<Time>(); // Transformei em Array, pois com ArrayList não estava conseguindo acessar os métodos da classe Time
-    public Campeonato(){
+    public Campeonato() throws IOException{
         try (BufferedReader br = new BufferedReader(new FileReader(caminhoArquivo))) {
             String linha;
             int index=0;
@@ -31,7 +31,9 @@ class Campeonato{
               }
 
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Erro: Não foi possível ler o arquivo no caminho fornecido: " + caminhoArquivo);
+            System.out.println("Verifique se o caminho está correto e se o arquivo existe.");
+            throw e;
         }
     }
     public ArrayList <Time> melhorDef(){
